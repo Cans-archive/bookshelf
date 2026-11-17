@@ -230,3 +230,56 @@ button, input, select {
     gap: 10px;
   }
 }
+
+.book-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.book-stats p {
+  margin: 0;
+  padding: 18px;
+  background: #eee5da;
+  color: #704541;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.book-filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.book-filters input,
+.book-filters select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ded4c8;
+  border-radius: 8px;
+  background: #fffdf9;
+  color: #332b27;
+  font: inherit;
+}
+
+.book-filters input:focus,
+.book-filters select:focus {
+  outline: 2px solid #a77c68;
+  border-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .book-stats {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .book-filters {
+    grid-template-columns: 1fr;
+  }
+}
