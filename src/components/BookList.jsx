@@ -1,7 +1,7 @@
 import { useState } from "react";
 import BookCard from "./BookCard";
 
-function BookList({ libros, onEliminar, onCambiarEstado }) {
+function BookList({ libros, onEliminar, onCambiarEstado, onEditar }) {
   const [busqueda, setBusqueda] = useState("");
   const [filtroEstado, setFiltroEstado] = useState("Todos");
 
@@ -74,6 +74,7 @@ function BookList({ libros, onEliminar, onCambiarEstado }) {
               libro={libro}
               onEliminar={onEliminar}
               onCambiarEstado={onCambiarEstado}
+              onEditar={onEditar}
             />
           ))}
         </div>
